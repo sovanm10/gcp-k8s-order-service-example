@@ -45,8 +45,8 @@ spec:
                 items:
                   - key: sm-identity
                     path: secret.jks
-      nodeSelector:
-          disktype: ssd           
+      #nodeSelector:
+      #    disktype: ssd           
 ---    
 apiVersion: v1
 kind: Service
