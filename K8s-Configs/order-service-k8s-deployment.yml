@@ -34,17 +34,17 @@ spec:
         envFrom:      
         - configMapRef: 
               name: order-service-k8s-configmap
-        volumeMounts: 
-        - name: secret-volume
-          mountPath: /etc/secret-volume
-          subPath: secret.jks
-      volumes: 
-          - name: secret-volume
-            secret: 
-                secretName: sm-identity
-                items:
-                  - key: sm-identity
-                    path: secret.jks
+#        volumeMounts: 
+#        - name: secret-volume
+#          mountPath: /etc/secret-volume
+#          subPath: secret.jks
+#      volumes: 
+#          - name: secret-volume
+#           secret: 
+#               secretName: sm-identity
+#                items:
+#                  - key: sm-identity
+#                    path: secret.jks
       #nodeSelector:
       #    disktype: ssd           
 ---    
