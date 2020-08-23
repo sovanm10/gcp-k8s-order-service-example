@@ -16,7 +16,7 @@ spec:
     spec: 
       containers:
       - name: order-service
-        image: sm/order-service:1.0
+        image: gcr.io/sm/order-service:1.0
         imagePullPolicy: Never
         ports: 
         - containerPort: 8080
