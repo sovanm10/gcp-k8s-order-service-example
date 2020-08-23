@@ -20,11 +20,14 @@ spec:
         imagePullPolicy: IfNotPresent
         ports: 
         - containerPort: 8080
-        livenessProbe: 
+        readinessProbe:
           httpGet:
             path: /v1
             port: 8080
-            scheme: HTTP
+        livenessProbe:
+          httpGet:
+            path: /v1
+            port: 8080
         env:
         - name: db.dbUser
           valueFrom: 
