@@ -16,7 +16,7 @@ spec:
     spec: 
       containers:
       - name: order-service
-        image: gcr.io/$GOOGLE_CLOUD_PROJECT/sm/order-service:1.0
+        image: sm/order-service:1.0
         imagePullPolicy: Never
         ports: 
         - containerPort: 8080
