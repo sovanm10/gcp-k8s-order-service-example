@@ -20,6 +20,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports: 
         - containerPort: 8080
+          protocol: TCP
         readinessProbe:
           httpGet:
             path: /v1
@@ -68,6 +69,5 @@ spec:
   ports:
   - protocol: TCP
     port: 8080
-    nodePort: 30002
     targetPort: 8080
   type: NodePort
