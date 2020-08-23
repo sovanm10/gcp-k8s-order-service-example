@@ -7,7 +7,7 @@ spec:
   - host: smorder.com
     http:
       paths:
-      - path: /v1
+      - path: /
         backend:
           serviceName: order-service
           servicePort: 8080
