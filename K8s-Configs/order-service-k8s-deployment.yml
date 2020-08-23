@@ -24,6 +24,12 @@ spec:
           httpGet:
             path: /v1
             port: 8080
+            scheme: HTTP
+        livenessProbe:
+          httpGet:
+            path: /v1
+            port: 8080
+            scheme: HTTP
         env:
         - name: db.dbUser
           valueFrom: 
@@ -66,4 +72,4 @@ spec:
     port: 8080
 #    nodePort: 30002
     targetPort: 8080
-  type: LoadBalancer
+  type: NodePort
