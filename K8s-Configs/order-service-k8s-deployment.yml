@@ -16,8 +16,8 @@ spec:
     spec: 
       containers:
       - name: order-service
-        image: sm/order-service:1.0
-        imagePullPolicy: Never
+        image: gcr.io/microservices-k8s-demo-1/sm/order-service:1.0
+        imagePullPolicy: IfNotPresent
         ports: 
         - containerPort: 8080
         env:
