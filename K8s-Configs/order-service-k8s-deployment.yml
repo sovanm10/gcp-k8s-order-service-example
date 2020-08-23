@@ -20,12 +20,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports: 
         - containerPort: 8080
-        readinessProbe:
-          httpGet:
-            path: /v1
-            port: 8080
-            scheme: HTTP
-        livenessProbe:
+        livenessProbe: 
           httpGet:
             path: /v1
             port: 8080
