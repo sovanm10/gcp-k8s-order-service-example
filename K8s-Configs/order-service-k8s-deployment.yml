@@ -25,10 +25,14 @@ spec:
           httpGet:
             path: /v1
             port: 8080
+          initialDelaySeconds: 6
+          timeoutSeconds: 6
         livenessProbe:
           httpGet:
             path: /v1
             port: 8080
+          initialDelaySeconds: 6
+          timeoutSeconds: 6  
         env:
         - name: db.dbUser
           valueFrom: 
