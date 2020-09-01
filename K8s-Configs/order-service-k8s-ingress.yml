@@ -2,8 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: order-service-k8s-ingress
-  annotations:
-    kubernetes.io/ingress.class: "gce"
 spec: 
   rules:
   - host: smorder.com
